@@ -1,0 +1,145 @@
+:root {
+
+	--risk-manager-green: #8ca633;
+	--risk-manager-amber: #f5b230;
+	--risk-manager-red: #d44f1c;
+	
+	--risk-manager-low: rgba(35,88,161,0.25);
+	--risk-manager-medium: rgba(35,88,161,0.5);
+	--risk-manager-high: rgba(35,88,161,1);
+
+}
+
+span.level-green, option.level-green {
+	
+	background: var(--risk-manager-green) !important;
+	
+}
+
+span.level-amber, option.level-amber {
+	
+	background: var(--risk-manager-amber) !important;
+	
+}
+
+span.level-red, option.level-red {
+	
+	background: var(--risk-manager-red) !important;
+	
+}
+
+span.score-low, option.score-low {
+	
+	background: var(--risk-manager-low) !important;
+	
+}
+
+span.score-medium, option.score-medium {
+	
+	background: var(--risk-manager-medium) !important;
+	
+}
+
+span.score-high, option.score-high {
+	
+	background: var(--risk-manager-high) !important;
+	
+}
+
+tr.risk-resolved {
+	
+	text-decoration: line-through;
+	
+}
+
+tr.row-hide {
+	
+	display: none;
+	
+}
+
+td.risk-cell {
+	
+	vertical-align: top;
+	
+}
+
+input.risk-input, select.risk-input {
+	
+	font-size: 14px;
+	color: #000 !important;
+	font-weight: 300;
+	
+}
+
+textarea.risk-textarea {
+	
+	min-height: 100px;
+	font-size: 14px;
+	color: #000;
+	font-weight: 300;
+	
+}
+
+span.risk-minitext {
+	
+	font-size: 11px;
+	text-align: right;
+	display: block;
+	
+}
+
+span.risk-edit-title {
+	
+	font-size: 14px;
+	font-weight: 500;
+	
+}
+
+
+
+.risk {
+	
+	border-radius: 14px;
+	height: 28px;
+	font-size: 14px;
+	padding: 2px 8px 2px 8px;
+	min-width: 75px;
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+div.risk-popup {
+	
+	font-size: 14px;
+	display: none;
+	position: absolute;
+	padding: 12px;
+	background: #136ebf;
+	min-height: 75px;
+	min-width: 100px;
+	max-width: 275px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	color: #fff;
+	animation-name: WITPop;
+	animation-duration: 0.5s;
+	text-align: left;
+	opacity: 0;
+	cursor: pointer;
+	
+}
+
+div.risk-popup:hover {
+	
+	opacity: 1;
+	
+}
+
+@keyframes WITPop {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
