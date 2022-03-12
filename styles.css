@@ -58,17 +58,67 @@ tr.row-hide {
 	
 }
 
-td.risk-cell {
+td.category-heading {
 	
-	vertical-align: top;
+	background: var(--risk-manager-medium) !important;
 	
 }
 
-input.risk-input, select.risk-input {
+td.risk-heading {
+	
+	background: var(--risk-manager-low) !important;
+	
+}
+
+tr.row-show {
+	
+	display: table-row;
+	
+}
+
+tr.risk-resolved {
+	
+	text-decoration: strikethrough;
+	
+}
+
+td.risk-cell {
+	
+	vertical-align: top;
+	border-right: 0 !important;
+	border-left: 0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	background: #eee !important;
+	padding: 12px !important;
+	
+}
+
+input.risk-input, select.risk-input, .risk-input {
 	
 	font-size: 14px;
 	color: #000 !important;
 	font-weight: 300;
+	
+}
+
+input[type="list"] {
+	
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid rgba(204,204,204,.5);
+	color: #595959;
+	padding: 10px 12px;
+	outline: 0;
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+	
+}
+
+button.risk-print-button {
+	
+	float: right;
 	
 }
 
